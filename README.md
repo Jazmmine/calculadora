@@ -29,4 +29,4 @@ En el siguiente flujograma se puede ver el pseudocódigo del ejercicio de la cal
 10.1. Operación (Resultado resto-modulo = a % b)
 10.2. Resultado Resto-Modulo
 11. Fin
-![FLUJOGRAMA](http://1.1m.yt/cwgg21F.jpg "Flujograma")
+![FLUJOGRAMA](http://2.1m.yt/9Wmh_yU.jpg "Flujograma")

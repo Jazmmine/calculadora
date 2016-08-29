@@ -36,7 +36,7 @@ switch(calculadora){
 		window.alert("La número menor es:" + menor);
 		break;
 	case 7:
-		var residuo = (num1/100)*num2;
+		var residuo = num1 % num2;
 		window.alert("El residuo es:" + residuo);
 		break;
 		
