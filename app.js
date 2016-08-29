@@ -1,4 +1,4 @@
-var calculadora = parseInt(prompt("Escoja la opcion que desee: \n" +
+var calculadora = parseInt(prompt("Escoja la opcion que desee realizar: \n" +
 	"1. Suma \n "+
 	"2. Resta \n "+
 	"3. Multiplicación \n "+
