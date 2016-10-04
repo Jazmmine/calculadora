@@ -71,10 +71,8 @@ do{
 		break;
 	}
 
-	else{
+	if (calculadora >= 9) {
 		alert("Opción incorrecta");
-		break;
-
 	}
 
 }while(condicion);
