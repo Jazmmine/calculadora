@@ -1,48 +1,82 @@
-var calculadora = parseInt(prompt("Escoja la opcion que desee realizar: \n" +
-	"1. Suma \n "+
-	"2. Resta \n "+
-	"3. Multiplicación \n "+
-	"4. División \n "+
-	"5. Mayor que \n "+
-	"6. Menor que \n"+
-	"7. Resto-Modulo \n "));
+var numero1;
+var numero2;
+var calculadora;
+var condicion;
 
-var num1 = parseInt(prompt("Ingrese el primer número"));
-var num2 = parseInt(prompt("Ingrese el segundo número"));
+condicion = true;
 
-switch(calculadora){
-	case 1:
-		var suma = num1 + num2;
-		window.alert("La suma es igual a: " + suma);
+do{
+
+	calculadora = parseInt(prompt("Ingrese la opción que deseea ejecutar : \n" +
+	"1. Suma \n" + 
+	"2. Resta \n" +
+	"3. Multiplicación \n" +
+	"4. División \n" +
+	"5. Resto \n" +
+	"6. Mayor que \n" +
+	"7. Menor que \n" +
+	"8. Salir \n"));
+
+
+	if (calculadora < 8) {
+
+		numero1 = parseInt(prompt("Ingrese primer número :"));
+		numero2 = parseInt(prompt("Ingrese segundo número :"));
+
+		switch(calculadora){
+		case 1:
+			var suma = numero1 + numero2;
+			alert("La suma es igual a: " + suma);
+			break;
+		case 2:
+			var resta = numero1 - numero2;
+			alert("La resta es igual a: " + resta);
+			break;
+		case 3:
+			var multiplicacion = numero1 * numero2;
+			alert("La Multiplicación es igual a: " + multiplicacion);
+			break;
+		case 4:
+			var division = numero1/numero2;
+			alert("La División es igual a: " + division);
+			break;
+		case 5:
+			var resto = numero1%numero2;
+			alert("El resto es igual a: " + resto);
+			break;
+		case 6:
+			if(numero1 == numero2){
+				alert(numero1 + " es igual a " + numero2);
+			}
+			else{
+				var numeroMayor = Math.max(numero1, numero2);
+				alert("El número mayor es: " + numeroMayor);
+			}
+			
+			break;
+		case 7:
+			if (numero1 == numero2) {
+				alert(numero1 + " es igual a " + numero2);
+			}
+			else{
+			var numeroMenor = Math.min(numero1, numero2);
+			alert("El número menor es: " + numeroMenor);			
+			}
+			break;	
+		}
+	}
+
+	if(calculadora == 8){
+		condicion == false;
 		break;
-	case 2:
-		var resta = num1 - num2;
-		window.alert("La resta es igual a: " + resta);
+	}
+
+	else{
+		alert("Opción incorrecta");
 		break;
-	case 3:
-		var multiplicacion = num1 * num2;
-		window.alert("La multiplicacion es igual a: " + multiplicacion);
-		break;
-	case 4:
-		var division = num1 / num2;
-		window.alert("La división es igual a: " + division);
-		break;
-	case 5:
-		var mayor = Math.max(num1, num2);
-		window.alert("El número mayor es:" + mayor);
-		break;
-	case 6:
-		var menor = Math.min(num1, num2);
-		window.alert("La número menor es:" + menor);
-		break;
-	case 7:
-		var residuo = num1 % num2;
-		window.alert("El residuo es:" + residuo);
-		break;
-		
-	default:
-		window.alert("Error");
-		break;
-	
-}
+
+	}
+
+}while(condicion);
+
 
